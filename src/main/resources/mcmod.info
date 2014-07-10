@@ -1,0 +1,27 @@
+{
+    "modListVersion": 1,
+    "modList": [
+        {
+            "modid": "RedDiamondMod",
+            "name": "Red Diamond Mod",
+            "description": "Adds a red diamond which you can do a lot stuff with.",
+            "version": "0.1",
+            "mcversion": "1.7.10",
+            "url": "",
+            "updateUrl": "",
+            "authorList": [
+                "MCGameSkilz"
+            ],
+            "credits": "Created by MCGameSkilz",
+            "logoFile": "",
+            "screenshots": [],
+            "parent": "",
+            "requiredMods": [
+                "Forge"
+            ],
+            "dependencies": [],
+            "dependants": [],
+            "useDependencyInformation": true
+        }
+    ]
+}
