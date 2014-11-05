@@ -170,7 +170,11 @@
     </group>
   </component>
   <component name="ProjectDictionaryState">
-    <dictionary name="Benjamin" />
+    <dictionary name="Benjamin">
+      <words>
+        <w>reddiamondmod</w>
+      </words>
+    </dictionary>
   </component>
   <component name="ProjectModuleManager">
     <modules>
@@ -185,6 +189,7 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
 

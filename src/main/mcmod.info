@@ -1,0 +1,21 @@
+[
+{
+  "modid": "RedDiamondMod",
+  "name": "Mr. Creative's Mod",
+  "description": "A mod that adds lots of random stuff.",
+  "version": "0.4-ALPHA",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "MCGameSkilz"
+  ],
+  "credits": "MCGameSkilz, Trym_Vadar",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

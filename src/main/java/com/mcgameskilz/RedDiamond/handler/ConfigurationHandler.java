@@ -13,9 +13,11 @@ public class ConfigurationHandler {
     public static Configuration configuration;
     public static boolean testValue = false;
 
-    public static void init(File configFile) {
+    public static void init(File configFile)
+    {
 
-        if (configuration == null) {
+        if (configuration == null)
+        {
             configuration = new Configuration(configFile);
             loadConfiguration();
         }
@@ -23,16 +25,20 @@ public class ConfigurationHandler {
     }
 
     @SubscribeEvent
-    public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event) {
-        if (event.modID.equalsIgnoreCase(Reference.MOD_ID)) {
+    public void onConfigurationChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
+    {
+        if (event.modID.equalsIgnoreCase(Reference.MOD_ID))
+        {
             configuration.load();
-         }
+        }
     }
 
-    private static void loadConfiguration() {
+    private static void loadConfiguration()
+    {
         testValue = configuration.getBoolean("configValue", configuration.CATEGORY_GENERAL, false, "Test Config");
 
-        if (configuration.hasChanged()){
+        if (configuration.hasChanged())
+        {
             configuration.save();
         }
     }

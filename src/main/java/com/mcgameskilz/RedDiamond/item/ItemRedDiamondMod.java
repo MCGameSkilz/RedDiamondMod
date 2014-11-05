@@ -1,6 +1,8 @@
 package com.mcgameskilz.RedDiamond.item;
 
 
+import com.mcgameskilz.RedDiamond.creativetab.CreativeTabItems;
+import com.mcgameskilz.RedDiamond.creativetab.CreativeTabRDM;
 import com.mcgameskilz.RedDiamond.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -8,18 +10,23 @@ import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ItemRedDiamondMod extends Item {
-    public ItemRedDiamondMod() {
+public class ItemRedDiamondMod extends Item
+{
+    public ItemRedDiamondMod()
+    {
         super();
+        this.setCreativeTab(CreativeTabItems.Items_TAB);
     }
 
     @Override
-    public String getUnlocalizedName() {
+    public String getUnlocalizedName()
+    {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override
-    public String getUnlocalizedName(ItemStack itemStack) {
+    public String getUnlocalizedName(ItemStack itemStack)
+    {
         return String.format("item.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
     }
 
@@ -30,7 +37,8 @@ public class ItemRedDiamondMod extends Item {
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
     }
 
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName) {
+    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+    {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
     }
 

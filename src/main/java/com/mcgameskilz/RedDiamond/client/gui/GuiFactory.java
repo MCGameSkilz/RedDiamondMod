@@ -7,9 +7,11 @@ import net.minecraft.client.gui.GuiScreen;
 
 import java.util.Set;
 
-public class GuiFactory implements IModGuiFactory {
+public class GuiFactory implements IModGuiFactory
+{
     @Override
-    public void initialize(Minecraft minecraftInstance) {
+    public void initialize(Minecraft minecraftInstance)
+    {
 
     }
 
